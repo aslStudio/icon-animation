@@ -1,0 +1,67 @@
+.card-balance {
+    $b: &;
+
+    background-color: $brand;
+    border-radius: 20px;
+    padding: 15px;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        color: $surface;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &__value {
+        font-size: 20px;
+        font-weight: 800;
+        color: $surface;
+    }
+
+    &__open,
+    &__close {
+        @include center();
+        transition: 0.3s ease;
+        transition-property: opacity;
+        opacity: 0;
+        width: 100%;
+    }
+
+    &__eye {
+        width: 20px;
+        aspect-ratio: 1;
+        position: relative;
+
+        &.is-open {
+            #{$b}__open {
+                opacity: 1;
+            }
+        }
+
+        &.is-close {
+            #{$b}__close {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        button {
+            width: calc(50% - 2px);
+        }
+    }
+}

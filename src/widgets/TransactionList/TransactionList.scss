@@ -1,0 +1,30 @@
+.transaction-list {
+    position: relative;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 800;
+        color: $brand;
+    }
+
+    &__filter {
+        margin-left: auto;
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 800;
+        margin-top: 10px;
+        color: $brand;
+    }
+
+    &__item {
+        margin-top: 5px;
+    }
+}

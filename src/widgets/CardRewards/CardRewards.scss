@@ -1,0 +1,40 @@
+.card-rewards {
+    background-color: $brand;
+    padding: 10px;
+    border-radius: 15px;
+
+    &__title {
+        font-size: 16px;
+        color: $surface;
+        font-weight: 600;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        p {
+            font-size: 14px;
+            color: $surface;
+            font-weight: 600;
+        }
+    }
+
+    &__square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        aspect-ratio: 1;
+        background-color: $surface;
+        border-radius: 10px;
+        margin-right: 10px;
+
+        span {
+            font-size: 18px;
+            color: $brand;
+            font-weight: 600;
+        }
+    }
+}

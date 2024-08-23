@@ -1,0 +1,44 @@
+.card-news {
+    $b: &;
+
+    position: relative;
+    background-color: $brand;
+    border-radius: 20px;
+    padding: 15px;
+
+    opacity: 1;
+    max-height: 151px;
+
+    transition: 0.3s ease;
+    transition-property: opacity, max-height, transform, padding;
+
+    &.is-hidden {
+        opacity: 0;
+        max-height: 0px;
+        transform: translateY(-15px);
+        padding: 0;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $surface;
+    }
+
+    &__check {
+        margin-top: 10px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 10px;
+        aspect-ratio: 1;
+
+        picture,
+        img {
+            width: auto;
+        }
+    }
+}

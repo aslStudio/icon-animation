@@ -1,0 +1,38 @@
+mixin NavBar()
+    footer.navbar.is-hidden 
+        button(
+            id="homeButton"
+        )
+            +Image(
+                "./images/NavBar/wallet", 
+                "wallet",
+                "png"
+            )
+            p Wallet
+        button(
+            id="farmingButton"
+        )
+            +Image(
+                "./images/NavBar/farming", 
+                "farming",
+                "png"
+            )
+            p Farming
+        button(
+            id="friendsButton"
+        )
+            +Image(
+                "./images/NavBar/friends", 
+                "farming",
+                "png"
+            )
+            p Friends
+        button(
+            id="tasksButton"
+        )
+            +Image(
+                "./images/NavBar/tasks", 
+                "farming",
+                "png"
+            )
+            p Tasks

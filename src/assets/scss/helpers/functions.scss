@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@function wp($size) {
+    $wpSize: $size / 320 * 100 * 1%;
+
+    @return $wpSize;
+}
+
+@function hp($size) {
+    $hpSize: $size / 568 * 100 * 1%;
+
+    @return $hpSize;
+}

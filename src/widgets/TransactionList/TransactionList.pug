@@ -1,0 +1,34 @@
+include ../../entities/CardTransaction/CardTransaction.pug
+include ../../features/FilterButton/FilterButton.pug
+
+mixin TransactionList()
+    div.transaction-list&attributes(attributes)
+        .__row
+            h2.__title Список транкзаций
+            +FilterButton().__filter
+        p.__label Сегодня
+        +CardTransaction(
+            'Transaction',
+            'From: Тn9nsJ91m...JANSJFMS',
+            '+125 TON',
+            'income'
+        ).__item
+        p.__label Вчера
+        +CardTransaction(
+            'Transaction',
+            'To: Тn9nsJ91m...JANSJFMS',
+            '-125 TON',
+            'outcome'
+        ).__item
+        +CardTransaction(
+            'Transaction',
+            'Form: Тn9nsJ91m...JANSJFMS',
+            '+125 TON',
+            'income'
+        ).__item
+        +CardTransaction(
+            'Transaction',
+            'To: Тn9nsJ91m...JANSJFMS',
+            '-125 TON',
+            'outcome'
+        ).__item

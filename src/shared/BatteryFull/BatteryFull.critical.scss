@@ -1,0 +1,33 @@
+@keyframes shake-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    18% {
+        transform: rotate(-8.42deg);
+    }
+    36% {
+        transform: rotate(7.14deg);
+    }
+    54% {
+        transform: rotate(-5.93deg);
+    }
+    72% {
+        transform: rotate(13.39deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.battery-full {
+    display: block;
+    width: 100px;
+
+    animation-name: shake-animation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

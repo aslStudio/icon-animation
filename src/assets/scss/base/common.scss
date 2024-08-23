@@ -1,0 +1,88 @@
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    color: $base;
+    font-family: $fontFamily, -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    background-color: $background; //-webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    height: auto;
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.button,
+button {
+    border: none;
+    cursor: pointer;
+    font-family: $fontFamily, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica', 'Arial', 'sans-serif';
+    background: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[data-src] {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.lazyload {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.not-clickable {
+    pointer-events: none;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 0 wp(20);
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

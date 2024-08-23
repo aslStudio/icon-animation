@@ -1,0 +1,5 @@
+$fontFamily: 'Acrom';
+
+@include newFont('Acrom', 'Acrom-Regular', 400);
+@include newFont('Acrom', 'Acrom-Bold', 600);
+@include newFont('Acrom', 'Acrom-ExtraBold', 800);
